@@ -104,7 +104,7 @@ This command pauses the current queue (If it exists)
 
 Example: `&play [song name or url]`
 
-This command play the [song name or url] in vc
+This command plays the [song name or url] in vc
 
 ### queue
 
@@ -174,7 +174,17 @@ afusion, vs, www
 
 ### Special image commands
 
-cat, dog
+cat
+
+Example: `&cat`
+
+Generates a cat image
+
+dog
+
+Example: `&dog`
+
+Generates a dog image
 
 clyde
 
@@ -206,7 +216,7 @@ This command displays the recent changes made to the bot
 
 Example: `&chat [chat arguments]`  
 
-Nia chats with you according to the [chat arguments] provided
+Bot chats with you according to the [chat arguments] provided
 
 ### help
 
@@ -225,6 +235,8 @@ Bot responds with bot's invite link
 Example: `&setlanguage [params]`
 
 Possible value for [params]: french or english
+
+sets the [params] as the bot's language for the server
 
 ### ping
 

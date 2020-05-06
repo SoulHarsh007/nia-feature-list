@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <style>
+        .head3 {
+            color: aliceblue;
+            font-family: 'Electrolize', sans-serif;
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .info {
+            color: ghostwhite;
+            font-family: 'Electrolize', sans-serif;
+            font-size: larger;
+        }
+
+        body {
+            background-color: rgb(32, 32, 32);
+        }
+
+        .button {
+            background-color: rgb(76, 175, 80);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5%;
+        }
+
+        .button:hover {
+            background-color: rgba(76, 175, 80, 0.9);
+        }
+    </style>
+</head>
+<script>
+    function moderation() {
+        document.getElementById("music").style.display = "none";
+        document.getElementById("giveaways").style.display = "none";
+        document.getElementById("others").style.display = "none";
+        document.getElementById("images").style.display = "none";
+        document.getElementById("moderation").style.display = "block";
+    }
+
+    function music() {
+        document.getElementById("moderation").style.display = "none";
+        document.getElementById("giveaways").style.display = "none";
+        document.getElementById("others").style.display = "none";
+        document.getElementById("images").style.display = "none";
+        document.getElementById("music").style.display = "block";
+    }
+
+    function giveaways() {
+        document.getElementById("moderation").style.display = "none";
+        document.getElementById("music").style.display = "none";
+        document.getElementById("others").style.display = "none";
+        document.getElementById("images").style.display = "none";
+        document.getElementById("giveaways").style.display = "block";
+    }
+
+    function image() {
+        document.getElementById("moderation").style.display = "none";
+        document.getElementById("music").style.display = "none";
+        document.getElementById("others").style.display = "none";
+        document.getElementById("giveaways").style.display = "none";
+        document.getElementById("images").style.display = "block";
+    }
+
+    function others() {
+        document.getElementById("moderation").style.display = "none";
+        document.getElementById("music").style.display = "none";
+        document.getElementById("giveaways").style.display = "none";
+        document.getElementById("images").style.display = "none";
+        document.getElementById("others").style.display = "block";
+    }
+</script>
+
+<body onload="moderation()">
+    <button class="button" onclick="moderation()">Moderation</button>
+    <button class="button" onclick="music()">Music</button>
+    <button class="button" onclick="giveaways()">Giveaways</button>
+    <button class="button" onclick="image()">Images</button>
+    <button class="button" onclick="others()">Others</button>
+    <span id="moderation">
+        <h3 class="head3">ban</h3>
+        <h4 class="info">
+            Example: &ban [user mention] [reason for audit logs]<br />
+            This command bans the [user mentioned] with [reason for audit logs]
+        </h4>
+        <h3 class="head3">kick</h3>
+        <h4 class="info">
+            Example: &kick [user mention] [reason for audit logs]<br />
+            This command kicks the [user mentioned] with [reason for audit logs]
+        </h4>
+        <h3 class="head3">nick</h3>
+        <h4 class="info">
+            Example: &nick [user mention] [new nickname]<br>
+            This command sets the [user mention]'s nickname as [new nickname]
+        </h4>
+        <h3 class="head3">profanity</h3>
+        <h4 class="info">
+            Example: &profanity<br>
+            This command enables the profanity filter in the server
+        </h4>
+        <h3 class="head3">purge</h3>
+        <h4 class="info">
+            Example: &purge [integer between 1-100]<br>
+            This command deletes [integer between 1-100] messages in current channel
+        </h4>
+        <h3 class="head3">vcdeaf</h3>
+        <h4 class="info">
+            Example: &vcdeaf [user mention] [reason for audit logs]<br>
+            Voice deafens the [user mention] server-wide for [reason for audit logs]</h4>
+        <h3 class="head3">vckick</h3>
+        <h4 class="info">
+            Example: &vckick [user mention] [reason for audit logs]<br>
+            Voicekicks the [user mention] for [reason for audit logs]
+        </h4>
+        <h3 class="head3">vcmute</h3>
+        <h4 class="info">
+            Example: &vcmute [user mention] [reason for audit logs]<br>
+            Voice mutes the [user mention] server-wide for [reason for audit logs]
+        </h4>
+        <h3 class="head3">vcundeaf</h3>
+        <h4 class="info">
+            Example: &vcundeaf [user mention] [reason for audit logs]<br>
+            Voice un-deafens the [user mention] server-wide for [reason for audit logs]
+        </h4>
+        <h3 class="head3">vcunmute</h3>
+        <h4 class="info">
+            Example: &vcunmute [user mention] [reason for audit logs]<br>
+            Voice un-mutes the [user mention] server-wide for [reason for audit logs]
+        </h4>
+        <h3 class="head3">warn</h3>
+        <h4 class="info">
+            Example: &warn [user mention] [reason]<br>
+            Bot warns the [user mention] in DMs for [reason]
+        </h4>
+    </span>
+    <span id="music">
+        <h3 class="head3">clearqueue</h3>
+        <h4 class="info">
+            Example: &clearqueue<br>
+            This command clears the Music queue for the server (If it exists)
+        </h4>
+        <h3 class="head3">disable-repeat</h3>
+        <h4 class="info">
+            Example: &disable-repeat<br>
+            This command stops looping the current song being played (If it exists)
+        </h4>
+        <h3 class="head3">enable-repeat</h3>
+        <h4 class="info">
+            Example: &enable-repeat<br>
+            This command starts looping the current song being played (If it exists)
+        </h4>
+        <h3 class="head3">np</h3>
+        <h4 class="info">
+            Example: &np<br>
+            Bot responds with the name of currenly playing song (If it exists)
+        </h4>
+        <h3 class="head3">pause</h3>
+        <h4 class="info">
+            Example: &pause<br>
+            This command pauses the current queue (If it exists)
+        </h4>
+        <h3 class="head3">play</h3>
+        <h4 class="info">
+            Example: &play [song name or url]<br>
+            This command plays the [song name or url] in vc
+        </h4>
+        <h3 class="head3">queue</h3>
+        <h4 class="info">
+            Example: &queue<br>
+            Bot responds the the current server queue (If it exists)
+        </h4>
+        <h3 class="head3">resume</h3>
+        <h4 class="info">
+            Example: &resume<br>
+            This command resumes the current queue (If it exists)
+        </h4>
+        <h3 class="head3">setvolume</h3>
+        <h4 class="info">
+            Example: &setvolume [integer 0-10]<br>
+            Sets the volume of current queue to [integer 0-10] (If it exists)
+        </h4>
+        <h3 class="head3">skip</h3>
+        <h4 class="info">
+            Example: &skip<br>
+            Skips one song from queue (If it exists)
+        </h4>
+        <h3 class="head3">stop</h3>
+        <h4 class="info">
+            Example: &stop<br>
+            This command stops the current queue (If it exists)
+        </h4>
+    </span>
+    <span id="giveaways">
+        <h3 class="head3">end-giveaway</h3>
+        <h4 class="info">
+            Example: &end-giveaway [message id]<br>
+            This command ends the giveaway with [message id]
+        </h4>
+        <h3 class="head3">reroll-giveaway</h3>
+        <h4 class="info">
+            Example: &reroll-giveaway [message id]<br>
+            This command rerolls the giveaway with [message id]
+        </h4>
+        <h3 class="head3">start-giveaway</h3>
+        <h4 class="info">
+            Example: &start-giveaway [channel mention] [duration] [winners] [prize]<br>
+            This command creates a giveaway in [channel mention] for a duration of [duration] and for [winners] winners
+            and [prize]
+        </h4>
+    </span>
+    <span id="images">
+        <h3 class="head3">Commands which require 1 users as a mention</h3>
+        <h4 class="info">
+            3000years, amiajoke, approved, av, avatarlink, beautiful,<br>
+            brazzers, captcha, crush, dictator, fire, frame, glitch,<br>
+            jail, look, passed, pixelize, rejected, rip, scary, steam,<br>
+            tbc, thanos, threats, triggered, trinity, wanted, wasted<br>
+        </h4>
+        <h3 class="head3">Commands which require 2 users as a mention</h3>
+        <h4 class="info">
+            afusion, vs, www
+        </h4>
+        <h3 class="head3">Special image commands</h3>
+        <h4 class="info">
+            <b>clyde</b><br>
+            Example: &clyde [some text]<br>
+            Generates clyde image with [some text]<br>
+            <b>scroll</b><br>
+            Example: &scroll [some text]<br>
+            Generates scroll image with [some text]<br>
+            <b>cat</b><br>
+            Example: &cat<br>
+            Generates random cat image<br>
+            <b>dog</b><br>
+            Example: &dog<br>
+            Generates random dog image<br>
+        </h4>
+    </span>
+    <span id="others">
+        <h3 class="head3">afk</h3>
+        <h4 class="info">
+            Example: &afk [afk note]<br>
+            This command sets you as AFK and when you are pinged in the chat, bot responds with your [afk note]
+        </h4>
+        <h3 class="head3">changelog</h3>
+        <h4 class="info">
+            Example: &changelog<br>
+            This command displays the recent changes made to the bot
+        </h4>
+        <h3 class="head3">chat</h3>
+        <h4 class="info">
+            Example: &chat [chat arguments]<br>
+            Bot chats with you according to the [chat arguments] provided
+        </h4>
+        <h3 class="head3">help</h3>
+        <h4 class="info">
+            Example: &help<br>
+            Bot responds with command categories
+        </h4>
+        <h3 class="head3">invite</h3>
+        <h4 class="info">
+            Example: &invite<br>
+            Bot responds with bot's invite link
+        </h4>
+        <h3 class="head3">setlanguage</h3>
+        <h4 class="info">
+            Example: &setlanguage [params]<br>
+            Possible value for [params]: french or english<br>
+            sets the [params] as the bot's language for the server
+        </h4>
+        <h3 class="head3">ping</h3>
+        <h4 class="info">
+            Example: &ping<br>
+            Bot responds with the Roundtrip and bot latency
+        </h4>
+        <h3 class="head3">poll</h3>
+        <h4 class="info">
+            Example: &poll [poll arguments (min: 2, max: 10)]<br>
+            Creates a poll in the channel with [poll arguments (min: 2, max: 10)]
+        </h4>
+        <h3 class="head3">prefix</h3>
+        <h4 class="info">
+            Example: &prefix [new prefix]<br>
+            This command sets [new prefix] as the server's prefix
+        </h4>
+        <h3 class="head3">resetprefix</h3>
+        <h4 class="info">
+            Example: &resetprefix<br>
+            Resets the server prefix to default (no matter what current prefix is running &resetprefix will reset your
+            prefix to default)
+        </h4>
+        <h3 class="head3">say</h3>
+        <h4 class="info">
+            Example: &say [some text]<br>
+            Messages the current channel with [some text]
+        </h4>
+        <h3 class="head3">server</h3>
+        <h4 class="info">
+            Example: &server<br>
+            Bot responds with the server information
+        </h4>
+        <h3 class="head3">snipe</h3>
+        <h4 class="info">
+            Example: &snipe [channel mention]<br>
+            Bot responds with the last message deleted in [channel mention]
+        </h4>
+        <h3 class="head3">stats</h3>
+        <h4 class="info">
+            Example: &stats<br>
+            Bot responds with system stats
+        </h4>
+        <h3 class="head3">support</h3>
+        <h4 class="info">
+            Example: &support<br>
+            Bot responds with support related information
+        </h4>
+        <h3 class="head3">uptime</h3>
+        <h4 class="info">
+            Example: &uptime<br>
+            Bot responds with bot's uptime
+        </h4>
+        <h3 class="head3">urban <b>(NSFW)</b></h3>
+        <h4 class="info">
+            Example: &urban [some word to search]<br>
+            Bot performs a search for [some word to search] on urban dictonary and returns the response
+        </h4>
+        <h3 class="head3">vote</h3>
+        <h4 class="info">
+            Example: &vote<br>
+            Bot responds with bot's top.gg vote link
+        </h4>
+        <h3 class="head3">whois</h3>
+        <h4 class="info">
+            Example: &whois [user mention]<br>
+            Bot responds with details of [user mention]
+        </h4>
+    </span>
+</body>
+
+</html>
