@@ -298,7 +298,7 @@ Example: `&uptime`
 
 Bot responds with bot's uptime
 
-### urban **(NSFW)**
+### urban
 
 Example: `&urban [some word to search]`
 
