@@ -1,178 +1,203 @@
-# Feature-list for Nia#3208  
+# Documentation for Nia#3208 (Discord-Bot)
 
-## Moderation
+## Nia
 
-### ban
+A multipurpose bot, supports Moderation, Music, Giveaways, Image Manupulation, and some basic utilities.
+Nia is built with the best moderation commands which include voice based moderation commands. For music Nia uses a custom library to stream music at highest quality and provide better user experience. Image Manupulation tasks are carried out using Amethyste API, which processes images at a lightning fast rate. Nia is in active development, any bugs reported are fixed within 2Hrs of reporting. Which means you can totally rely on us!
 
-Example: `&ban [user mention] [reason for audit logs]`  
+## Why Nia?  
+
+### Project is in active development  
+
+#### Resolve bugs quickly
+
+#### Better user exeperience
+
+#### 24/7 support availability
+
+### Hosted on dedicated servers  
+
+#### Zero downtime
+
+#### Better performance
+
+### Transperent Privacy Policy  
+
+## Commands  
+
+### Moderation  
+
+#### ban
+
+Example: `&ban [user mention] [reason for audit logs]`
 
 This command bans the [user mentioned] with [reason for audit logs]
 
-### kick
+#### kick  
 
-Example: `&kick [user mention] [reason for audit logs]`  
+Example: `&kick [user mention] [reason for audit logs]`
 
 This command kicks the [user mentioned] with [reason for audit logs]
 
-### nick
+#### nick  
 
 Example: `&nick [user mention] [new nickname]`
 
 This command sets the [user mention]'s nickname as [new nickname]
 
-### profanity
+#### profanity  
 
 Example: `&profanity`
 
 This command enables the profanity filter in the server
 
-### purge
+#### purge  
 
 Example: `&purge [integer between 1-100]`
 
 This command deletes [integer between 1-100] messages in current channel
 
-### vcdeaf
+#### vcdeaf  
 
 Example: `&vcdeaf [user mention] [reason for audit logs]`
 
 Voice deafens the [user mention] server-wide for [reason for audit logs]
 
-### vckick
+#### vckick  
 
 Example: `&vckick [user mention] [reason for audit logs]`
 
 Voicekicks the [user mention] for [reason for audit logs]
 
-### vcmute
+#### vcmute  
 
 Example: `&vcmute [user mention] [reason for audit logs]`
 
 Voice mutes the [user mention] server-wide for [reason for audit logs]
 
-### vcundeaf
+#### vcundeaf  
 
 Example: `&vcundeaf [user mention] [reason for audit logs]`
 
 Voice un-deafens the [user mention] server-wide for [reason for audit logs]
 
-### vcunmute
+#### vcunmute  
 
 Example: `&vcunmute [user mention] [reason for audit logs]`
 
 Voice un-mutes the [user mention] server-wide for [reason for audit logs]
 
-### warn
+#### warn  
 
 Example: `&warn [user mention] [reason]`
 
 Bot warns the [user mention] in DMs for [reason]
 
-## Music  
+### Music  
 
-### clearqueue
+#### clearqueue  
 
 Example: `&clearqueue`
 
 This command clears the Music queue for the server (If it exists)
 
-### disable-repeat
+#### disable-repeat  
 
 Example: `&disable-repeat`
 
 This command stops looping the current song being played (If it exists)
 
-### enable-repeat
+#### enable-repeat  
 
 Example: `&enable-repeat`
 
 This command starts looping the current song being played (If it exists)
 
-### np
+#### np  
 
 Example: `&np`
 
 Bot responds with the name of currenly playing song (If it exists)
 
-### pause
+#### pause  
 
 Example: `&pause`
 
 This command pauses the current queue (If it exists)
 
-### play
+#### play  
 
 Example: `&play [song name or url]`
 
 This command plays the [song name or url] in vc
 
-### queue
+#### queue  
 
 Example: `&queue`
 
 Bot responds the the current server queue (If it exists)
 
-### resume
+#### resume  
 
 Example: `&resume`
 
 This command resumes the current queue (If it exists)
 
-### setvolume
+#### setvolume  
 
 Example: `&setvolume [integer 0-10]`
 
 Sets the volume of current queue to [integer 0-10] (If it exists)
 
-### skip
+#### skip  
 
 Example: `&skip`
 
 Skips one song from queue (If it exists)
 
-### stop
+#### stop  
 
 Example: `&stop`
 
 This command stops the current queue (If it exists)
 
-## Giveaways
+### Giveaways  
 
-### end-giveaway
+#### end-giveaway  
 
 Example: `&end-giveaway [message id]`
 
-This command ends the giveaway with [message id]  
+This command ends the giveaway with [message id]
 
-### reroll-giveaway
+#### reroll-giveaway  
 
 Example: `&reroll-giveaway [message id]`
 
-This command rerolls the giveaway with [message id]  
+This command rerolls the giveaway with [message id]
 
-### start-giveaway
+#### start-giveaway  
 
 Example: `&start-giveaway [channel mention] [duration] [winners] [prize]`
 
 This command creates a giveaway in [channel mention] for a duration of [duration] and for [winners] winners and [prize]
 
-## Images  
+### Images  
 
-### Commands which require 1 users as a mention
+#### Commands which require 1 users as a mention  
 
-3000years, amiajoke, approved, av, avatarlink, beautiful,  
+3000years, amiajoke, approved, av, avatarlink, beautiful,
 
-brazzers, captcha, crush, dictator, fire, frame, glitch,  
+brazzers, captcha, crush, dictator, fire, frame, glitch,
 
-jail, look, passed, pixelize, rejected, rip, scary, steam,  
+jail, look, passed, pixelize, rejected, rip, scary, steam,
 
-tbc, thanos, threats, triggered, trinity, wanted, wasted  
+tbc, thanos, threats, triggered, trinity, wanted, wasted
 
-### Commands which require 2 users as a mention
+#### Commands which require 2 users as a mention  
 
 afusion, vs, www
 
-### Special image commands
+#### Special image commands  
 
 cat
 
@@ -198,39 +223,39 @@ Example: `&scroll [some text]`
 
 Generates scroll image with [some text]
 
-## Others
+### Others  
 
-### afk
+#### afk  
 
-Example: `&afk [afk note]`  
+Example: `&afk [afk note]`
 
 This command sets you as AFK and when you are pinged in the chat, bot responds with your [afk note]
 
-### changelog
+#### changelog  
 
-Example: `&changelog`  
+Example: `&changelog`
 
-This command displays the recent changes made to the bot  
+This command displays the recent changes made to the bot
 
-### chat
+#### chat  
 
-Example: `&chat [chat arguments]`  
+Example: `&chat [chat arguments]`
 
 Bot chats with you according to the [chat arguments] provided
 
-### help
+#### help  
 
 Example: `&help`
 
 Bot responds with command categories
 
-### invite
+#### invite  
 
 Example: `&invite`
 
 Bot responds with bot's invite link
 
-### setlanguage
+#### setlanguage  
 
 Example: `&setlanguage [params]`
 
@@ -238,79 +263,79 @@ Possible value for [params]: french or english
 
 sets the [params] as the bot's language for the server
 
-### ping
+#### ping  
 
 Example: `&ping`
 
 Bot responds with the Roundtrip and bot latency
 
-### poll
+#### poll  
 
 Example: `&poll [poll arguments (min: 2, max: 10)]`
 
 Creates a poll in the channel with [poll arguments (min: 2, max: 10)]
 
-### prefix
+#### prefix  
 
 Example: `&prefix [new prefix]`
 
 This command sets [new prefix] as the server's prefix
 
-### resetprefix
+#### resetprefix  
 
 Example: `&resetprefix`
 
 Resets the server prefix to default (no matter what current prefix is running `&resetprefix` will reset your prefix to default)
 
-### say
+#### say  
 
 Example: `&say [some text]`
 
 Messages the current channel with [some text]
 
-### server
+#### server  
 
 Example: `&server`
 
 Bot responds with the server information
 
-### snipe
+#### snipe  
 
 Example: `&snipe [channel mention]`
 
 Bot responds with the last message deleted in [channel mention]
 
-### stats
+#### stats  
 
 Example: `&stats`
 
 Bot responds with system stats
 
-### support
+#### support  
 
 Example: `&support`
 
 Bot responds with support related information
 
-### uptime
+#### uptime  
 
 Example: `&uptime`
 
 Bot responds with bot's uptime
 
-### urban
+#### urban  
 
 Example: `&urban [some word to search]`
 
 Bot performs a search for [some word to search] on urban dictonary and returns the response
 
-### vote
+#### vote  
 
 Example: `&vote`
 
 Bot responds with bot's top.gg vote link
 
-### whois
+#### whois  
 
 Example: `&whois [user mention]`
 

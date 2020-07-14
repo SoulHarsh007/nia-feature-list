@@ -2,7 +2,7 @@
 
 ## What information do we collect?
 
-We store guild (server) configurations (Prefix, Profanity-Filter, and other customizations), deleted or edited nessages, and some messages which are collected when a user attempts to generate a bug report.
+We store guild (server) configurations (Prefix, Profanity-Filter, and other customizations), deleted or edited messages (Temporarily collected, max lifetime: 8Hrs), and some messages which are collected when a user attempts to generate a bug report.
 
 ## Why is this information collected?
 
