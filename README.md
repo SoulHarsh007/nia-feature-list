@@ -237,12 +237,6 @@ Example: `&changelog`
 
 This command displays the recent changes made to the bot
 
-#### chat  
-
-Example: `&chat [chat arguments]`
-
-Bot chats with you according to the [chat arguments] provided
-
 #### help  
 
 Example: `&help`
